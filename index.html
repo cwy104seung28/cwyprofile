@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="paroller.js,jquery plugin,parallax,scrolling,parallax effect,jQuery,paroller,scroller,scrolling,paroller js,paroller jquery, paroller plugin">
+    <meta name="google-site-verification" content="TWTDG5sHkQOekIFUa5uWVmi7yO3pJTU7AGMaIPajIHc" />
+    <script src="https://use.fontawesome.com/9576790a31.js"></script>
+    <link rel="stylesheet" href="/node_modules/paroller.js/assets/style.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>𝓬𝔀𝔂</title>
+</head>
+
+<body>
+    <section id="sidebar">
+        <div class="inner">
+            <nav class="profile-nav">
+                <ul>
+                    <li><span>𝓬𝔀𝔂</span></li>
+                    <li><a href="#about"class="active">關於我</a></li>
+                    <li><a href="#works">作品</a></li>
+                    <li><a href="#commission">委託</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div id="wrapper">
+        <!-- <img class="profile-BG" src="./img/home-page-BG.png"> -->
+        <section id="about" class="profile-section wrapper fade-up">
+        </section>
+        <section id="works" class="wrapper fade-up"></section>
+        <section id="commission" class="wrapper fade-up">
+            <div class="inner">
+                <h2>Demo</h2>
+    
+                <h6 class="mega my-element"
+                    data-paroller-factor="0.5"
+                    data-paroller-factor-lg="0.4"
+                    data-paroller-factor-md="0.3"
+                    data-paroller-factor-sm="-0.2"
+                    data-paroller-factor-xs="-0.1"
+                    data-paroller-type="foreground"
+                    data-paroller-direction="horizontal"
+                    data-paroller-transition="transform .2s linear"
+                >
+                    👋 Heola! こんにちは! Ahoj! Merhaba! Olá!
+                </h6>
+            </div>
+        </section>
+    </div>
+        <!-- Scripts -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <!--paroller.js-->
+        <script src="/node_modules/paroller.js/dist/jquery.paroller.js"></script>
+        <script src="/node_modules/paroller.js/assets/main.js"></script>
+        <script>
+            $(document)
+                .ready(function () {
+                    //initialize paroller.js
+                    $('[data-paroller-factor]').paroller();
+                    //initialize paroller.js and set options for elements with .paroller class
+                    $('.paroller-example').paroller({
+                        factorXs: 0.1,
+                        factorSm: 0.1,
+                        factorMd: -0.4,
+                        factorLg: -0.5,
+                        factorXl: -0.6,
+                        factor: -0.4,
+                        type: 'foreground',
+                        direction: 'horizontal',
+                        transition: 'transform .3s ease-out'
+                    });
+                });
+        </script>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+body,
+html {
+    margin: 0;
+    width: 100%;
+}
+body {
+    #sidebar {
+        width: 15em;
+        background-color: #c791c7;
+        background-image: linear-gradient(0deg, #c791c7 0%, #8069b4 100%);
+    }
+    #wrapper {
+        margin-left: 15em;
+        #about {
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/BG-1.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #works {
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/BG-2.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .profile-BG {
+            // width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        // .profile-section{
+        //     width: 80%;
+        //     height: 900px;
+        //     background-color: #b1caff8a;
+        // }
+    }
+    #sidebar+#wrapper{
+        margin-left: 15em;
+    }
+}

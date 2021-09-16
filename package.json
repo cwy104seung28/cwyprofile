@@ -1,0 +1,22 @@
+{
+  "name": "cwyprofile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwy104seung28/cwyprofile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwy104seung28/cwyprofile/issues"
+  },
+  "homepage": "https://github.com/cwy104seung28/cwyprofile#readme",
+  "dependencies": {
+    "paroller.js": "^1.4.7"
+  }
+}

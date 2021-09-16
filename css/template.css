@@ -1,0 +1,48 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+}
+
+body header {
+  width: 100%;
+  position: fixed;
+}
+
+body header .nav-toggle {
+  display: none;
+}
+
+body header .profile-nav {
+  background-color: #9c91ff8f;
+}
+
+body header .profile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .profile-nav ul li {
+  padding: 20px 40px;
+}
+
+body header .profile-nav ul li a {
+  font-size: 16px;
+  color: #19235c;
+}
+
+body header .profile-nav ul li a:hover {
+  color: #c6cfff;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=template.css.map */

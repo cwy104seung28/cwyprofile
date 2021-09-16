@@ -1,0 +1,44 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+}
+
+body #sidebar {
+  width: 15em;
+  background-color: #c791c7;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c791c7), to(#8069b4));
+  background-image: linear-gradient(0deg, #c791c7 0%, #8069b4 100%);
+}
+
+body #wrapper {
+  margin-left: 15em;
+}
+
+body #wrapper #about {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/BG-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body #wrapper #works {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/BG-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body #wrapper .profile-BG {
+  position: absolute;
+  z-index: -1;
+}
+
+body #sidebar + #wrapper {
+  margin-left: 15em;
+}
+/*# sourceMappingURL=index.css.map */

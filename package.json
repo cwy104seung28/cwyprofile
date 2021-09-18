@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cwy104seung28/cwyprofile#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "paroller.js": "^1.4.7"
   }
 }

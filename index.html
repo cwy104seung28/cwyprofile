@@ -8,13 +8,11 @@
     <meta name="keywords"
         content="paroller.js,jquery plugin,parallax,scrolling,parallax effect,jQuery,paroller,scroller,scrolling,paroller js,paroller jquery, paroller plugin">
     <meta name="google-site-verification" content="TWTDG5sHkQOekIFUa5uWVmi7yO3pJTU7AGMaIPajIHc" />
+    <title>𝓬𝔀𝔂</title>
     <script src="https://use.fontawesome.com/9576790a31.js"></script>
     <link rel="stylesheet" href="./paroller.js/assets/style.css">
-    <link rel="stylesheet" href="./css/template.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>𝓬𝔀𝔂</title>
 </head>
-
 <body class="is-loading">
     <section id="sidebar">
         <div class="inner">
@@ -53,9 +51,32 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <!--paroller.js-->
+    
     <script src="./paroller.js/dist/jquery.paroller.js"></script>
     <script src="./paroller.js/assets/main.js"></script>
-    <!-- <script src="./node_modules/paroller.js"></script> -->
+    <script>
+        $(document)
+            .ready(function () {
+                //initialize paroller.js
+                $('[data-paroller-factor]').paroller();
+                //initialize paroller.js and set options for elements with .paroller class
+                $('.paroller-example').paroller({
+                    factorXs: 0.1,
+                    factorSm: 0.1,
+                    factorMd: -0.4,
+                    factorLg: -0.5,
+                    factorXl: -0.6,
+                    factor: -0.4,
+                    type: 'foreground',
+                    direction: 'horizontal',
+                    transition: 'transform .3s ease-out'
+                });
+            });
+    </script>
+    <!-- 失敗的cdn -->
+    <!-- <script src="https://github.com/tgomilar/paroller.js"></script> -->
+    <!-- <script src="https://unpkg.com/paroller.js@1.4.1/dist/jquery.paroller.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.7/jquery.paroller.js"></script> -->
     <script>
         $(document)
             .ready(function () {
@@ -76,6 +97,4 @@
             });
     </script>
 </body>
-
-
 </html>

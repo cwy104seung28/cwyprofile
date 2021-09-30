@@ -1,39 +1,38 @@
-body,
-html {
-    margin: 0;
-    width: 100%;
-}
-body {
-    header {
-        width: 100%;
-        position: fixed;
+// body,
+// html {
+//     margin: 0;
+//     width: 100%;
+// }
+// body {
+//     #sidebar {
+//         width: 100%;
+//         position: fixed;
         
-        .nav-toggle {
-            display: none;
-        }
-        .profile-nav {
-            // display: flex;
-            background-color: #9c91ff8f;
-            ul {
-                display: flex;
+//         // .nav-toggle {
+//         //     display: none;
+//         // }
+//         .profile-nav {
+//             // display: flex;
+//             // background-color: #9c91ff8f;
+//             ul {
 
-                li {
-                    padding: 20px 40px;
+//                 li {
+//                     // padding: 20px 40px;
 
-                    a {
-                        font-size: 16px;
-                        color: #19235c;
+//                     a {
+//                         font-size: 16px;
+//                         color: #19235c;
 
-                        &:hover {
-                            color: #c6cfff;
-                            transition: ease-in-out 0.3s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         &:hover {
+//                             color: #c6cfff;
+//                             transition: ease-in-out 0.3s;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 ul {
     list-style: none;
 }

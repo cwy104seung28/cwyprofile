@@ -1,8 +1,8 @@
-body,
-html {
-    margin: 0;
-    width: 100%;
-}
+// body,
+// html {
+//     margin: 0;
+//     width: 100%;
+// }
 body {
     #sidebar {
         width: 15em;
@@ -28,10 +28,13 @@ body {
             background-repeat: no-repeat;
         }
 
-        .profile-BG {
-            // width: 100%;
-            position: absolute;
-            z-index: -1;
+        #commission {
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/BG-3.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         // .profile-section{
         //     width: 80%;
@@ -42,4 +45,10 @@ body {
     #sidebar+#wrapper{
         margin-left: 15em;
     }
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }

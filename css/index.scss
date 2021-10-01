@@ -1,8 +1,8 @@
-// body,
-// html {
-//     margin: 0;
-//     width: 100%;
-// }
+body,
+html {
+    margin: 0;
+    width: 100%;
+}
 body {
     #sidebar {
         width: 15em;
@@ -12,29 +12,83 @@ body {
     #wrapper {
         margin-left: 15em;
         #about {
-            width: 100%;
-            height: 100vh;
-            background-image: url("../img/BG-1.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            // width: 100%;
+            // height: 100vh;
+            // background-image: url("../img/BG-1.png");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            .inner-change-1 {
+                padding: 0px;
+                .jumbotron {
+                    .inner-change-2 {
+                        padding: 30px;
+                        background-color: #c791c7af;
+                        .profile-title {
+                            margin-bottom: 20px;
+                            &::after {
+                                background-image: linear-gradient(90deg, #a360ca, #f879bf);
+                                transition: max-width 0.2s ease;
+                                border-radius: 0.2em;
+                                bottom: 0;
+                                content: "";
+                                height: 0.05em;
+                                position: absolute;
+                                right: 0;
+                                width: 100%;
+                            }
+                        }
+                        .profile-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            .profile-content {
+                                font-size: 16px;
+                                color: #ffffff;
+                                padding-right: 10px;
+                                hr{
+                                    margin: 0px;
+                                }
+                                h3,h4{
+                                    margin-top: .5em;
+                                }
+                            }
+                            .profile-picture {
+                                width: 400px;
+                                height: 400px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         #works {
-            width: 100%;
-            height: 100vh;
-            background-image: url("../img/BG-2.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            // width: 100%;
+            // height: 100vh;
+            // background-image: url("../img/BG-2.png");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            .inner {
+                padding: 0px;
+                .inner-bg {
+                    background-color: #c791c7af;
+                }
+            }
         }
 
         #commission {
-            width: 100%;
-            height: 100vh;
-            background-image: url("../img/BG-3.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            // width: 100%;
+            // height: 100vh;
+            // background-image: url("../img/BG-3.png");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            .inner {
+                padding: 0px;
+                .inner-bg {
+                    background-color: #c791c7af;
+                }
+            }
         }
         // .profile-section{
         //     width: 80%;
@@ -42,7 +96,7 @@ body {
         //     background-color: #b1caff8a;
         // }
     }
-    #sidebar+#wrapper{
+    #sidebar + #wrapper {
         margin-left: 15em;
     }
 }

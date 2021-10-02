@@ -10,6 +10,7 @@
     <meta name="google-site-verification" content="TWTDG5sHkQOekIFUa5uWVmi7yO3pJTU7AGMaIPajIHc" />
     <title>𝓬𝔀𝔂</title>
     <script src="https://use.fontawesome.com/9576790a31.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./paroller.js/assets/style.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -29,8 +30,7 @@
     </section>
     <div id="wrapper">
         <!-- about -->
-
-        <section id="about" class="wrapper fullscreen fade-up">
+        <section id="about" class="wrapper fade-up">
             <div class="inner inner-change-1">
                 <div class="jumbotron text-center my-5" style="background: url('./img/BG-1.png') repeat center;
                 background-size: cover; margin: 0px;" data-paroller-factor="-0.25" data-paroller-factor-sm="-0.2"
@@ -38,6 +38,7 @@
                     <div class="inner inner-change-2">
                         <h2 class="about-title">自我介紹</h2>
                         <div class="about-flex">
+                            <img class="about-picture" src="./img/profile-picture.png" alt="阿瑜的繪型">
                             <div class="about-content">
                                 <span class="paragraph-1">
                                     大家好，我是阿瑜ヾ(•ω•`)o<br>
@@ -69,59 +70,91 @@
                                     巨雷CP：吉良忍<br>
                                     ⛔選拒認識吉良忍CP粉(過激以及濃度高者會拒！<br>
                                     ⭐不介意有吃我小雷CP的人來認識，只是可能無法跟你聊這塊<br>
-                                    ⭐但如果你雷川吉良，建議不要來認識，版上濃度非常高<br>
+                                    ⭐但如果你雷川吉良，還請您三思，因版上濃度非常高<br>
                                 </span>
                                 <h3>遊戲坑：</h3>
-                                拳皇
-                                主推：古利查力度/King/Kula
-                                副推：二階堂紅丸/比利/羅伯特
-                                CP：K'&Kula
-                                ---
-                                仙劍奇俠傳(一代)/軒轅劍(三代)/天地劫(序傳)
-                                均為主角全員推
-                                ---
-                                貓咪收集 Neko atsume
-                                最近非常喜歡！每隻貓貓我都愛😽
-                                --------------------
-                                Kpop韓團坑：
-                                韓團本命：BIGBANG
-                                我是喜歡老團體的人wwwww
-                                --------------------
-                                可能會變成坑：頭文字D
+                                <span class="paragraph-4">
+                                    拳皇<br>
+                                    主推：古利查力度/瓊(King)/庫拉<br>
+                                    副推：二階堂紅丸/比利/羅伯特<br>
+                                    CP：K'&庫拉<br>
+                                </span>
                                 <hr>
-
+                                <span class="paragraph-5">
+                                    仙劍奇俠傳(一代)/軒轅劍(三代)/天地劫(序傳)<br>
+                                    均為主角全員推<br>
+                                </span>
+                                <hr>
+                                <span class="paragraph-6">
+                                    貓咪收集 Neko atsume<br>
+                                    最近非常喜歡！每隻貓貓我都愛<br>
+                                </span>
+                                <hr>
+                                <h3>Kpop韓團坑：</h3>
+                                <span class="paragraph-7">
+                                    韓團本命：BIGBANG<br>
+                                    偏好二代團，永遠的經典<br>
+                                </span>
+                                <hr>
+                                <span class="paragraph-8">
+                                    <h3>可能會變成坑：</h3>
+                                    頭文字D<br>
+                                </span>
+                                <hr>
                             </div>
-                            <img class="about-picture" src="./img/profile-picture.png" alt="阿瑜的繪型">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- works -->
         <section id="works" class="wrapper fade-up">
             <div class="inner">
-                <div class="jumbotron text-center my-5" style="background: url('./img/BG-2.png') repeat center; background-size: cover;width: 100%;
-                height: 100vh; margin: 0px;" data-paroller-factor="-0.3" data-paroller-factor-sm="-0.2"
+                <div class="jumbotron text-center my-5" style="background: url('./img/BG-2.png') repeat center; background-size: cover; width: 100%;
+                height: 100vh; margin: 0px;
+                @media (max-width: 767px) {
+                    height: 80vh;
+                }" 
+                data-paroller-factor="-0.3" data-paroller-factor-sm="-0.2"
                     data-paroller-factor-xs="-0.1">
-                    <div class="inner-bg"></div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/work-6.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-8.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-1.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-7.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-2.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-3.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-4.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/work-5.png">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <!-- <h2 class="profile-title">自我介紹</h2>
-                <span class="profile-content">
-                    大家好我是阿瑜
-                    你也可以叫我瑜瑜/小瑜 之類的只要有瑜字就好!!
-
-                </span>
-                <img src="./img/profile-picture.png" alt=""> -->
             </div>
         </section>
-
         <!-- commission -->
         <section id="commission" class="wrapper fade-up">
             <div class="inner">
                 <div class="jumbotron text-center my-5"
-                    style="background: url('./img/BG-3.png') repeat center; margin: 0px;" data-paroller-factor="1.1"
-                    data-paroller-factor-sm="-0.2" data-paroller-factor-xs="-0.1">
+                    style="background: url('./img/BG-3.png') repeat center; margin: 0px; height: 100vh"
+                    data-paroller-factor="1.1" data-paroller-factor-sm="-0.2" data-paroller-factor-xs="-0.1">
                     <div class="inner">
                         <h6 class="commission-sign my-element" data-paroller-factor="0.5" data-paroller-factor-lg="0.4"
                             data-paroller-factor-md="0.3" data-paroller-factor-sm="-0.2" data-paroller-factor-xs="-0.1"
@@ -168,6 +201,19 @@
                     transition: 'transform .3s ease-out'
                 });
             });
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay:{
+                delay:5000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
     </script>
     <!-- 失敗的cdn -->
     <!-- <script src="https://github.com/tgomilar/paroller.js"></script> -->

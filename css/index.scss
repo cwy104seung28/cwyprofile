@@ -7,13 +7,16 @@ body {
     #sidebar {
         width: 15em;
         background-color: #c791c7;
-        background-image: linear-gradient(0deg, #c791c7 0%, #8069b4 100%);
-        @media screen and (max-width: 1280px) {
+        background-image: linear-gradient(0deg, #db98d0 0%, #8968d4 100%);
+        @media  (max-width: 1280px) {
             width: 100%;
+        }
+        @media  (max-width: 736px) {
+            display: initial;
+
         }
     }
     #wrapper {
-
         #about {
             // width: 100%;
             // height: 100vh;
@@ -24,11 +27,21 @@ body {
             .inner-change-1 {
                 padding: 0px;
                 .jumbotron {
+                    @media  (max-width: 768px) {
+                        padding: 2.5em 10px;
+                    }
                     .inner-change-2 {
                         padding: 30px;
                         background-color: #c791c7af;
                         .about-title {
                             margin-bottom: 20px;
+                            @media screen and (max-width: 1280px) {
+                                margin-bottom: 15px;
+                                font-size: 27px;
+                            }   
+                            @media screen and (max-width: 768px) {
+                                font-size: 20px;
+                            } 
                             &::after {
                                 background-image: linear-gradient(90deg, #a360ca, #f879bf);
                                 transition: max-width 0.2s ease;
@@ -43,21 +56,37 @@ body {
                         }
                         .about-flex {
                             display: flex;
+                            flex-direction: row-reverse;
                             justify-content: space-between;
+                            @media screen and (max-width: 1280px) {
+                                flex-direction: column;
+                                align-items: center;
+                            }
                             .about-content {
                                 font-size: 16px;
                                 color: #ffffff;
                                 padding-right: 10px;
-                                hr{
+                                @media screen and (max-width: 768px) {
+                                    font-size: 12px;
+                                }
+                                hr {
                                     margin: 0px;
                                 }
-                                h3,h4{
-                                    margin-top: .5em;
+                                h3,
+                                h4 {
+                                    margin-top: 0.5em;
                                 }
                             }
                             .about-picture {
                                 width: 400px;
                                 height: 400px;
+                                @media screen and (max-width: 1280px) {
+                                    margin-bottom: 20px;
+                                }
+                                @media screen and (max-width: 768px) {
+                                    width: 200px;
+                                    height: 200px;
+                                }
                             }
                         }
                     }
@@ -88,13 +117,19 @@ body {
             // background-repeat: no-repeat;
             .inner {
                 padding: 0px;
-                .commission-sign{
+                .commission-sign {
                     font-size: 100px;
                     text-align: center;
+                    margin-top: 300px;
+                    @media screen and (max-width: 1280px) {
+                        font-size: 75px;
+                    }  
+                    @media screen and (max-width: 768px) {
+                        font-size: 50px;
+                    }  
                 }
             }
         }
-
     }
     #sidebar + #wrapper {
         margin-left: 15em;
@@ -102,10 +137,59 @@ body {
             margin-left: 0px;
         }
     }
+    .wrapper > .inner {
+        width: 100%;
+    }
 }
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+}
+
+:root {
+    --swiper-theme-color: #c240ff;
 }

@@ -8,9 +8,12 @@ body {
         width: 15em;
         background-color: #c791c7;
         background-image: linear-gradient(0deg, #c791c7 0%, #8069b4 100%);
+        @media screen and (max-width: 1280px) {
+            width: 100%;
+        }
     }
     #wrapper {
-        margin-left: 15em;
+
         #about {
             // width: 100%;
             // height: 100vh;
@@ -24,7 +27,7 @@ body {
                     .inner-change-2 {
                         padding: 30px;
                         background-color: #c791c7af;
-                        .profile-title {
+                        .about-title {
                             margin-bottom: 20px;
                             &::after {
                                 background-image: linear-gradient(90deg, #a360ca, #f879bf);
@@ -38,10 +41,10 @@ body {
                                 width: 100%;
                             }
                         }
-                        .profile-flex {
+                        .about-flex {
                             display: flex;
                             justify-content: space-between;
-                            .profile-content {
+                            .about-content {
                                 font-size: 16px;
                                 color: #ffffff;
                                 padding-right: 10px;
@@ -52,7 +55,7 @@ body {
                                     margin-top: .5em;
                                 }
                             }
-                            .profile-picture {
+                            .about-picture {
                                 width: 400px;
                                 height: 400px;
                             }
@@ -85,19 +88,19 @@ body {
             // background-repeat: no-repeat;
             .inner {
                 padding: 0px;
-                .inner-bg {
-                    background-color: #c791c7af;
+                .commission-sign{
+                    font-size: 100px;
+                    text-align: center;
                 }
             }
         }
-        // .profile-section{
-        //     width: 80%;
-        //     height: 900px;
-        //     background-color: #b1caff8a;
-        // }
+
     }
     #sidebar + #wrapper {
         margin-left: 15em;
+        @media screen and (max-width: 1280px) {
+            margin-left: 0px;
+        }
     }
 }
 ul {

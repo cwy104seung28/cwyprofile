@@ -11,8 +11,10 @@ body #sidebar {
   background-image: linear-gradient(0deg, #c791c7 0%, #8069b4 100%);
 }
 
-body #wrapper {
-  margin-left: 15em;
+@media screen and (max-width: 1280px) {
+  body #sidebar {
+    width: 100%;
+  }
 }
 
 body #wrapper #about .inner-change-1 {
@@ -24,11 +26,11 @@ body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 {
   background-color: #c791c7af;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-title {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-title {
   margin-bottom: 20px;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-title::after {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-title::after {
   background-image: -webkit-gradient(linear, left top, right top, from(#a360ca), to(#f879bf));
   background-image: linear-gradient(90deg, #a360ca, #f879bf);
   -webkit-transition: max-width 0.2s ease;
@@ -42,7 +44,7 @@ body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-title::
   width: 100%;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,21 +53,21 @@ body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex {
           justify-content: space-between;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex .profile-content {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex .about-content {
   font-size: 16px;
   color: #ffffff;
   padding-right: 10px;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex .profile-content hr {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex .about-content hr {
   margin: 0px;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex .profile-content h3, body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex .profile-content h4 {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex .about-content h3, body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex .about-content h4 {
   margin-top: .5em;
 }
 
-body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .profile-flex .profile-picture {
+body #wrapper #about .inner-change-1 .jumbotron .inner-change-2 .about-flex .about-picture {
   width: 400px;
   height: 400px;
 }
@@ -82,12 +84,19 @@ body #wrapper #commission .inner {
   padding: 0px;
 }
 
-body #wrapper #commission .inner .inner-bg {
-  background-color: #c791c7af;
+body #wrapper #commission .inner .commission-sign {
+  font-size: 100px;
+  text-align: center;
 }
 
 body #sidebar + #wrapper {
   margin-left: 15em;
+}
+
+@media screen and (max-width: 1280px) {
+  body #sidebar + #wrapper {
+    margin-left: 0px;
+  }
 }
 
 ul {
